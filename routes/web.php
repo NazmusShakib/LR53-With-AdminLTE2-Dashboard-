@@ -14,3 +14,8 @@
 Route::get('/', function () {
     return view('dashboard.index');
 });
+
+
+Route::get('/directory-add', function () {
+    return view('directories.directory-add-form');
+});
