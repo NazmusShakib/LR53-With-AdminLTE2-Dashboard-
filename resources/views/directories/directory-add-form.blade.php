@@ -225,7 +225,7 @@
                         <div class="form-group">
                             <label for="remarks">Remarks:</label>
                             <textarea name="remarks" id="remarks" placeholder="Enter Remarks Here.." rows="3"
-                                      class="form-control"> {!! old('remarks') !!} </textarea>
+                                      class="form-control">{!! old('remarks') !!}</textarea>
                         </div>
                         <div class="form-group">
                             <label for="directory_query">Query:</label>
