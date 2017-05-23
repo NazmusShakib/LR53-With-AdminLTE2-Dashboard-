@@ -44,6 +44,19 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Exception $exception)
     {
+        if ($exception instanceof \Symfony\Component\HttpKernel\Exception\NotFoundHttpException) {
+            return back();
+        }
+        else if ($exception instanceof \Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException) {
+            return back();
+        } else {
+            //return \Response::view('errors.404', array('code' => 'http_error_404'), 404);
+        }
+
+        if ($exception instanceof TokenMismatchException){
+            return redirect()->back()->with('message_error',"Oops! Seems you couldn't submit form for a longtime. Please try again");
+        }
+
         return parent::render($request, $exception);
     }
 
