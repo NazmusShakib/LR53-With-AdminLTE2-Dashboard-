@@ -12,6 +12,12 @@
             background-size: cover;
         }
 
+        :required  {
+            background: url(/assets/icons/asterisk-small.png) no-repeat;
+            background-position:right top;
+            background-color: #fff;
+        }
+
         /* Everything but the jumbotron gets side spacing for mobile first views */
         .header,
         .marketing,
