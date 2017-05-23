@@ -241,7 +241,7 @@
 
                         <div class="form-group">
                             <label for="avatar">Upload Your Photo:</label>
-                            <input type="file" name="avatar" id="avatar" placeholder="Upload Your Photo Here.."
+                            <input type="file" name="avatar" id="avatar" accept="image/*" placeholder="Upload Your Photo Here.."
                                    class="form-control">
                         </div>
 
