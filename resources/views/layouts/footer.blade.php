@@ -11,5 +11,20 @@
      Both of these plugins are recommended to enhance the
      user experience. Slimscroll is required when using the
      fixed layout. -->
+@yield('js')
+<script>
+    $(document).ready(function () {
+        var n = $(".alert").css("display");
+        //console.log(n);
+        if(n != 'none') {
+            $(".alert").fadeTo(5000, 500).slideUp(500, function() {
+                $(".alert").slideUp(500);
+            });
+        } else {
+
+        }
+    })
+</script>
+
 </body>
 </html>

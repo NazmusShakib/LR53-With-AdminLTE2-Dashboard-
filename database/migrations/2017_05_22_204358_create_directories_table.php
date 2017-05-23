@@ -27,8 +27,8 @@ class CreateDirectoriesTable extends Migration
             $table->string('fb_id')->nullable();
             $table->string('blood_group')->nullable();
             $table->string('alt_mob_of_relative')->nullable();
-            $table->string('remarks')->nullable();
-            $table->string('query')->nullable();
+            $table->text('remarks')->nullable();
+            $table->text('directory_query')->nullable();
             $table->string('avatar')->nullable();
             $table->timestamps();
         });
