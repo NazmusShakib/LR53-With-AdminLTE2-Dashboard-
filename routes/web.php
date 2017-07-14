@@ -14,3 +14,13 @@
 Route::get('/', function () {
     return view('dashboard.index');
 });
+
+Route::get('/mail', [
+    'as' => 'mailPage',
+    'uses' => 'TestMailController@mailPage'
+]);
+
+Route::get('/mail-send', [
+    'as' => 'sendMail',
+    'uses' => 'TestMailController@sendMail'
+]);
